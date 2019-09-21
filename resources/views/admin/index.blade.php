@@ -1,4 +1,4 @@
-@extends('layouts.admin') 
+@extends('layouts.admin')
 @section('content')
 
 
@@ -41,7 +41,7 @@
                 <i class="flex-1 flex flex-start ml-4 text-5xl el-icon-user-outline mb-3" data-feather="home"></i>
                 <h6 class="flex-2">
                     <p class="font-bold">{{$camps}}</p>
-                    Relief Camps
+                    Rescue Centers
 
                 </h6>
             </div>
@@ -76,22 +76,22 @@
         </div>
     </div>
 @endsection
- 
+
 @section('js')
     <script>
         $( document ).ready(function() {
-  
+
      $('#tabledata').DataTable({
         processing: true,
         serverSide: true,
-        'bServerSide': true,        'bAutoWidth': false, 
+        'bServerSide': true,        'bAutoWidth': false,
 
         ajax: '{!! url('admin/data/requests') !!}',
         "columns": [
-            {"data": "name"}, 
-            {"data": "phone"}, 
-            {"data": "map"}, 
-            {"data": "created_at"}, 
+            {"data": "name"},
+            {"data": "phone"},
+            {"data": "map"},
+            {"data": "created_at"},
             {"data": "actions", 'searchable': false}
         ],
         initComplete: function () {

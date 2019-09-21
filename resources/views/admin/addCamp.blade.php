@@ -1,4 +1,4 @@
-@extends('layouts.admin',['title' => 'Add Camp']) 
+@extends('layouts.admin',['title' => 'Add Camp'])
 @section('content')
 
 <div class="row flex mb-1c">
@@ -10,7 +10,7 @@
             <span class="el-breadcrumb__item"><span role="link" class="el-breadcrumb__inner is-link"><a href="{{ url('admin/camps') }}">Camps</a></span>
             <i class="el-breadcrumb__separator el-icon-arrow-right"></i>
             </span>
-            <span class="el-breadcrumb__item"><span role="link" class="el-breadcrumb__inner">New Camp</span>
+            <span class="el-breadcrumb__item"><span role="link" class="el-breadcrumb__inner">New Center</span>
             <i class="el-breadcrumb__separator el-icon-arrow-right"></i>
             </span>
 
@@ -27,7 +27,7 @@
     {!! Form::open([ 'url' => 'admin/camps/add','class' => 'form-horizontal']) !!}
 
 
-    <span class="form-group flex" style="margin-right:0px">              
+    <span class="form-group flex" style="margin-right:0px">
         <span class="flex flex-1 justify-start align-middle">
             {!! Form::label('name','Name' , ['class' => '']) !!}
          </span>
@@ -38,7 +38,7 @@
 
 
 
-    <span class="form-group flex" style="margin-right:0px">              
+    <span class="form-group flex" style="margin-right:0px">
             <span class="flex flex-1 justify-start align-middle">
                 {!! Form::label('location','Location' , ['class' => '']) !!}
              </span>
@@ -50,7 +50,7 @@
 
 
 
-    <span class="form-group flex" style="margin-right:0px">              
+    <span class="form-group flex" style="margin-right:0px">
             <span class="flex flex-1 justify-start align-middle">
                 {!! Form::label('map','Latitude, Longitude' , ['class' => '']) !!}
              </span>
@@ -61,7 +61,7 @@
 
 
 
-    <span class="form-group flex" style="margin-right:0px">              
+    <span class="form-group flex" style="margin-right:0px">
             <span class="flex flex-1 justify-start align-middle">
                 {!! Form::label('district','District' , ['class' => '']) !!}
              </span>
@@ -74,7 +74,7 @@
 
 
 
-    <span class="form-group flex" style="margin-right:0px">              
+    <span class="form-group flex" style="margin-right:0px">
             <span class="flex flex-1 justify-start align-middle">
                 {!! Form::label('address','Address' , ['class' => '']) !!}
              </span>
@@ -84,7 +84,7 @@
     </span>
 
 
-    <span class="form-group flex" style="margin-right:0px">              
+    <span class="form-group flex" style="margin-right:0px">
             <span class="flex flex-1 justify-start align-middle">
                 {!! Form::label('contact','Contact Number' , ['class' => '']) !!}
              </span>
@@ -107,7 +107,7 @@
     {!! Form::close() !!}
 </div>
 @endsection
- 
+
 @section('js')
 <script src="http://maps.googleapis.com/maps/api/js?libraries=places" type="text/javascript"></script>
 
@@ -118,8 +118,8 @@
         google.maps.event.addListener(autocomplete, 'place_changed', function () {
             var place = autocomplete.getPlace();
              document.getElementById('map').value = place.geometry.location.lat()+','+place.geometry.location.lng();
-   
-    
+
+
 
         });
     }

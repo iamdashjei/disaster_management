@@ -1,9 +1,9 @@
-@extends('layouts.app',['title' => 'Camps']) 
+@extends('layouts.app',['title' => 'Camps'])
 @section('content')
 
 <div class="row bg-white p-5">
     <div class="flex w-full   py-2 border-b  ">
-        <h4 class="flex-2">Camps</h4>
+        <h4 class="flex-2">Centers</h4>
         <div class="flex-1  flex justify-end">
     @include('district',['type' => 'autochange'])
 
@@ -43,7 +43,7 @@
 
 </div>
 @endsection
- 
+
 @section('js')
 <script>
     function choose(dist){

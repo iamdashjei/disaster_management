@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" type="image/png" href="{{ url('images/favicon.png') }}">
 
-    <title>{{ config('app.name', 'Disaster') }} @isset($title) - {{$title}} @endisset</title>
+    <title>eReport Mo</title>
 
 
     <!-- Fonts -->

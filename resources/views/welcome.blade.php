@@ -1,4 +1,4 @@
-@extends('layouts.app') 
+@extends('layouts.app')
 @section('content')
 
 <div class="row bg-white rounded md:flex p-5 mb-5">
@@ -29,7 +29,7 @@
             <div class="el-card is-hover-shadow">
                 <div class="el-card__body card-contents flex flex-column justify-center align-center text-center">
                     <i class="feather" data-feather="home"></i>
-                    <h4 class="font-normal">Relief Camps</h4>
+                    <h4 class="font-normal">Rescue Centers</h4>
                 </div>
             </div>
         </a>

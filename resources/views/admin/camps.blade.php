@@ -1,4 +1,4 @@
-@extends('layouts.admin',['title' => 'Camps']) 
+@extends('layouts.admin',['title' => 'Centers'])
 @section('content')
 
 <div class="md:row md:flex mb-1c">
@@ -39,21 +39,21 @@
     </div>
 </div>
 @endsection
- 
+
 @section('js')
 <script>
     $( document ).ready(function() {
-  
+
      $('#tabledata').DataTable({
         processing: true,
-        serverSide: true,        'bAutoWidth': false, 
+        serverSide: true,        'bAutoWidth': false,
 
         'bServerSide': true,
         ajax: '{!! url('admin/data/camps') !!}',
         "columns": [
-            {"data": "name"}, 
-            {"data": "district"}, 
-            {"data": "address"}, 
+            {"data": "name"},
+            {"data": "district"},
+            {"data": "address"},
             {"data": "actions", 'searchable': false}
         ],
         initComplete: function () {
